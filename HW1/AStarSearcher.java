@@ -4,7 +4,8 @@ import java.util.Iterator;
 
 /**
  * A* algorithm search
- * 
+ * Author: John L Peterson
+ * Date: 10 FEB 2015
  * You should fill the search() method of this class.
  */
 public class AStarSearcher extends Searcher {
@@ -26,10 +27,9 @@ public class AStarSearcher extends Searcher {
 	 */
 	public boolean search() {
 
-		// FILL THIS METHOD
-
 		// CLOSED list is a Boolean array that indicates if a state associated with a given position in the maze has already been expanded. 
 		boolean[][] closed = new boolean[maze.getNoOfRows()][maze.getNoOfCols()];
+        // Initialize to false
 		for(int i=0;i<maze.getNoOfRows()-1;i++) {
 			for(int j=0;j<maze.getNoOfCols()-1;j++) {
 				closed[i][j] = false;
@@ -37,6 +37,7 @@ public class AStarSearcher extends Searcher {
 		}
 
 		// OPEN list (aka Frontier list)
+        // Calculate initial state pair values and push onto Priority Queue
 		PriorityQueue<StateFValuePair> open = new PriorityQueue<StateFValuePair>();
 		Square solution = maze.getGoalSquare();
 		double p = (double) solution.X;
@@ -52,19 +53,17 @@ public class AStarSearcher extends Searcher {
 		open.add(initialPair);
 		noOfNodesExpanded = 0;
 		cost = 0;
-		// TODO initialize the root state and add
-		// to OPEN list
-		// ...
-		//System.out.println("Goal square is: ("+maze.getGoalSquare().X+","+maze.getGoalSquare().Y+")");
 		while (!open.isEmpty()) {
+            // Keep the max frontier size updated
 			if(open.size() > maxSizeOfFrontier) maxSizeOfFrontier = open.size();
 			StateFValuePair tempPair = open.poll();
 
 			double tempFVal = tempPair.getFValue();
 			State tempState = tempPair.getState();
-			//System.out.println("Popped new state ("+tempState.getX()+","+tempState.getY()+")");
 			State parentState = tempState.getParent();
 			noOfNodesExpanded++;
+            
+            // if true, this is a solution. loop back to modify the path and return true
 			if((tempState.getX() == maze.getGoalSquare().X) && (tempState.getY() == maze.getGoalSquare().Y)) {
 				cost++;
 				while(parentState.getParent() != null) {
@@ -75,30 +74,32 @@ public class AStarSearcher extends Searcher {
 				}
 				return true;
 			}
+            // otherwise, do calculations to determine if we will use a state or not
 			u = (double) tempState.getX();
 			v = (double) tempState.getY();
 			closed[tempState.getX()][tempState.getY()] = true;
 			double tempHVal = Math.abs(u-p) + Math.abs(v-q);
 			double tempGVal = (double) tempState.getGValue();
 			ArrayList<State> tempList = tempState.getSuccessors(closed, maze);
+            
+            // loop through successors list and compare to both frontier and expanded
 			for(State s:tempList) {
-				//System.out.println("Processing State ("+s.getX()+","+s.getY()+")");
 				boolean add = true;
 				boolean replace = false;
 				boolean discard = false;
 				State checkState = s;
 				double checkH = Math.abs((double)checkState.getX()-p) + Math.abs((double)checkState.getY()-q);
 				double checkG = (double)checkState.getGValue();
-				StateFValuePair checkPair = new StateFValuePair(checkState, checkH+checkG);
+				
+                // Compare to frontier comes first
+                StateFValuePair checkPair = new StateFValuePair(checkState, checkH+checkG);
 				Iterator<StateFValuePair> itr = open.iterator();
 				StateFValuePair toReplace = new StateFValuePair(new State(new Square(0,0), null, 0, 0), 0);
 				while(itr.hasNext()) {
 					StateFValuePair sfp = itr.next();
 					if((sfp.getState().getSquare().X == checkPair.getState().getSquare().X) && (sfp.getState().getSquare().Y == checkPair.getState().getSquare().Y) && !replace && !discard) {
-						//System.out.println("Open state is being reexamined here");
 						double sfpG = (double) sfp.getState().getGValue();
 						if(checkG < sfpG) {
-							//System.out.println("New G value lower than frontier");
 							replace = true;
 							toReplace = sfp;
 						}
@@ -108,12 +109,11 @@ public class AStarSearcher extends Searcher {
 				
 				int i = checkState.getX();
 				int j = checkState.getY();
-
+                
+                // Compare to expanded list comes next
 				if(closed[i][j]) {
-					//System.out.println("Closed state is being reexamined here");
 					double closedG = checkPair.getFValue()-(Math.abs((double)i - p) + Math.abs((double)j - q));
 					if(checkG < closedG) {
-						//System.out.println("New G value lower than expanded");
 						closed[i][j] = false;
 					}
 					else discard = true;
@@ -126,15 +126,10 @@ public class AStarSearcher extends Searcher {
 				}
 			}
 
-			// TODO return true if a solution has been found
-			// TODO maintain the cost, noOfNodesExpanded,
-			// TODO update the maze if a solution found
 
-			// use open.poll() to extract the minimum stateFValuePair.
-			// use open.add(...) to add stateFValue pairs
 		}
 
-		// TODO return false if no solution
+		// return false if no solution
 		return false;
 	}
 

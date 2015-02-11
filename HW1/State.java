@@ -4,7 +4,8 @@ import java.util.ArrayList;
  * A state in the search represented by the (x,y) coordinates of the square and
  * the parent. In other words a (square,parent) pair where square is a Square,
  * parent is a State.
- * 
+ * Editor: John L Peterson
+ * Date: 10 FEB 2015
  * You should fill the getSuccessors(...) method of this class.
  * 
  */
@@ -44,13 +45,13 @@ public class State {
 	 * @return all the successors of the current state
 	 */
 	public ArrayList<State> getSuccessors(boolean[][] closed, Maze maze) {
-		// FILL THIS METHOD
+		// Checks if nearby states are open and returns ArrayList of available successors
 		ArrayList<State> successors = new ArrayList<State>();
 
+        // Initialize current coordinates and determine if we can check directions (at edges or not)
 		Square currentSquare = this.getSquare();
 		int boundX = maze.getNoOfRows();
 		int boundY = maze.getNoOfCols();
-		//System.out.println("boundX = "+boundX+" boundY = "+boundY);
 		boolean checkUp, checkRight, checkDown, checkLeft;
 
 		int upX=currentSquare.X-1;
@@ -67,37 +68,30 @@ public class State {
 		if(currentSquare.Y > 0) checkLeft = true;
 		else checkLeft = false;
 
+        // If we are allowed to check squares (i.e. not at edge of maze, if space is empty add it
+        // If not, ignore it
 		if(checkLeft) {
-				if(maze.getSquareValue(currentSquare.X,leftY)!='%' /*&& !closed[currentSquare.X][leftY]*/) {
+				if(maze.getSquareValue(currentSquare.X,leftY)!='%') {
 					successors.add(new State(new Square(currentSquare.X,leftY), this, gValue+1, depth+1));
-					//System.out.println("Adding to left");
 				}
 		}
 
 		if(checkDown) {
-				if(maze.getSquareValue(downX,currentSquare.Y)!='%' /*&& !closed[downX][currentSquare.Y]*/) {
+				if(maze.getSquareValue(downX,currentSquare.Y)!='%') {
 					successors.add(new State(new Square(downX,currentSquare.Y), this, gValue+1, depth+1));
-					//System.out.println("Adding below");
 				}
 		}
-		/*System.out.println("Right square coordinate is: ("+currentSquare.X+","+rightY+")");
-		System.out.println("Right square value is: "+maze.getSquareValue(currentSquare.X,rightY));
-		*/
 		if(checkRight) {
-				if(maze.getSquareValue(currentSquare.X,rightY)!='%' /*&& !closed[currentSquare.X][rightY]*/) {
+				if(maze.getSquareValue(currentSquare.X,rightY)!='%') {
 					successors.add(new State(new Square(currentSquare.X,rightY), this, gValue+1, depth+1));
-					//System.out.println("Adding to right");
 				}
 		}
 
 		if(checkUp) {
-				// check if a wall or open
-				if(maze.getSquareValue(upX,currentSquare.Y)!='%' /*&& !closed[upX][currentSquare.Y]*/) {
+				if(maze.getSquareValue(upX,currentSquare.Y)!='%') {
 					successors.add(new State(new Square(upX,currentSquare.Y), this, gValue+1, depth+1));
-					//System.out.println("Adding above");
 				}
 		}
-		//System.out.println("Successors = "+successors);
 		return successors;
 	}
 
