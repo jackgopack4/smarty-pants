@@ -1,0 +1,706 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sfp",
+				"stateFValuePair"
+			],
+			[
+				"Y",
+				"Y"
+			],
+			[
+				"down",
+				"downY"
+			],
+			[
+				"current",
+				"currentSquare"
+			],
+			[
+				"getSquare",
+				"getSquareValue"
+			],
+			[
+				"X",
+				"X"
+			],
+			[
+				"fifo_",
+				"fifo_empty"
+			],
+			[
+				"pixel",
+				"pixel_b"
+			],
+			[
+				"pix",
+				"pixel_x"
+			],
+			[
+				"Rx",
+				"RxD_data"
+			],
+			[
+				"TxD_",
+				"TxD_shift"
+			],
+			[
+				"foreign",
+				"foreign"
+			],
+			[
+				"str",
+				"str"
+			],
+			[
+				"inst",
+				"instr_ID_EX"
+			],
+			[
+				"WB_",
+				"WB_dst_addr_DM_WB"
+			],
+			[
+				"DM_read",
+				"DM_readData2_ID_EX"
+			],
+			[
+				"EX_signO",
+				"EX_signOutALU_ID_EX"
+			],
+			[
+				"JumpAL",
+				"DM_JumpAL_EX_DM"
+			],
+			[
+				"signout",
+				"signOutBJ"
+			],
+			[
+				"EX_signOut",
+				"EX_signOutJump_ID_EX"
+			],
+			[
+				"signOutB",
+				"EX_signOutBranch_ID_EX"
+			],
+			[
+				"signOut",
+				"signOutJump"
+			],
+			[
+				"RegWrite",
+				"WB_RegWrite_DM_WB"
+			],
+			[
+				"dst_addr",
+				"WB_dst_addr_DM_WB"
+			],
+			[
+				"Branch",
+				"DM_Branch_EX_DM"
+			],
+			[
+				"ccc",
+				"DM_ccc_EX_DM"
+			],
+			[
+				"rd_",
+				"rd_data"
+			],
+			[
+				"MemRead",
+				"DM_MemRead_EX_DM"
+			],
+			[
+				"readD",
+				"DM_readData2_EX_DM"
+			],
+			[
+				"ALUR",
+				"DM_ALUResult_EX_DM"
+			],
+			[
+				"program",
+				"DM_programCounter_EX_DM"
+			],
+			[
+				"readData",
+				"DM_readData1_ID_EX"
+			],
+			[
+				"n",
+				"n"
+			],
+			[
+				"read",
+				"readReg2"
+			],
+			[
+				"readReg",
+				"readReg1"
+			],
+			[
+				"progr",
+				"DM_programCounter_IF_ID"
+			],
+			[
+				"readDat",
+				"readData2"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"git",
+				"Git: Status"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/johnpeterson/Documents/School Documents/ECE554/xilinx-xylophone/VGA/display_pane.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE554/xilinx-xylophone/VGA/draw_logic.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE554/xilinx-xylophone/VGA/dvi_ifc.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE554/xilinx-xylophone/VGA/fifo.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE554/xilinx-xylophone/VGA/rom.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE554/xilinx-xylophone/VGA/vga_logic.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE554/xilinx-xylophone/VGA/vgapic.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE554/xilinx-xylophone/VGA/top_level.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE554/xilinx-xylophone/VGA/vga_clk.v",
+		"/Users/johnpeterson/Documents/School Documents/CS540/HW1/Programming Part/Searcher.java",
+		"/Users/johnpeterson/Documents/School Documents/CS540/HW1/Programming Part/HW1.java",
+		"/Users/johnpeterson/Documents/School Documents/CS540/HW1/Programming Part/AStarSearcher.java",
+		"/Users/johnpeterson/Documents/School Documents/CS540/HW1/Programming Part/StateFValuePair.java",
+		"/Users/johnpeterson/Documents/School Documents/CS540/HW1/Programming Part/State.java",
+		"/Users/johnpeterson/Documents/School Documents/CS540/HW1/Programming Part/Square.java",
+		"/Users/johnpeterson/Documents/School Documents/CS540/HW1/Programming Part/Maze.java",
+		"/Users/johnpeterson/Documents/School Documents/CS540/HW1/Programming Part/input1.txt",
+		"/Users/johnpeterson/Documents/School Documents/CS540/HW1/Programming Part/IO.java",
+		"/Users/johnpeterson/Documents/School Documents/CS540/HW1/Programming Part/output1(DFS).txt",
+		"/Users/johnpeterson/Documents/School Documents/CS540/HW1/Programming Part/output1(ASTAR).txt",
+		"/Users/johnpeterson/Documents/School Documents/CS540/HW1/Programming Part/CS540HW1.sublime-project",
+		"/Users/johnpeterson/Documents/School Documents/ECE554/xilinx-xylophone/VGA/tutorial/draw_logic.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE554/xilinx-xylophone/VGA/ipcore_dir/fifo_core.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE554/xilinx-xylophone/VGA/tutorial/main_logic.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE554/xilinx-xylophone/VGA/tutorial/tick_logic.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE554/xilinx-xylophone/VGA/tutorial/dvi_ifc.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE554/xilinx-xylophone/VGA/tiny_img.coe",
+		"/Users/johnpeterson/Documents/School Documents/ECE554/xilinx-xylophone/mini_spart/tx.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE554/xilinx-xylophone/mini_spart/top_level.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE554/xilinx-xylophone/mini_spart/spart.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE554/xilinx-xylophone/mini_spart/driver.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE554/xilinx-xylophone/mini_spart/baud_rate_gen.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE554/xilinx-xylophone/mini_spart/bus_interface.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE554/xilinx-xylophone/mini_spart/rx.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE554/xilinx-xylophone/mini_spart/rx_tb.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE554/xilinx-xylophone/mini_spart/tx2.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE554/xilinx-xylophone/mini_spart/tx_tb.v",
+		"/Users/johnpeterson/Downloads/async-2/async.v",
+		"/Users/johnpeterson/Downloads/async/async.v",
+		"/Users/johnpeterson/Desktop/tx.v",
+		"/Users/johnpeterson/Documents/School Documents/CS578/intersection.cpp",
+		"/Users/johnpeterson/Documents/School Documents/CS578/bestcoallitions.cpp",
+		"/Users/johnpeterson/Documents/School Documents/CS578/garbageheap.cpp",
+		"/Users/johnpeterson/Documents/School Documents/CS578/sequencealignment.cpp",
+		"/Users/johnpeterson/Documents/School Documents/CS578/simple2.cpp",
+		"/Users/johnpeterson/Documents/School Documents/CS578/radarinstallation.cpp",
+		"/Users/johnpeterson/Documents/School Documents/CS578/simplehashing.cpp",
+		"/Users/johnpeterson/Documents/School Documents/CS578/ant.cpp",
+		"/Users/johnpeterson/Documents/School Documents/CS578/oreon.cpp",
+		"/Users/johnpeterson/Documents/School Documents/CS578/cantor.cpp",
+		"/Users/johnpeterson/Documents/School Documents/CS578/foreignexchange.cpp",
+		"/Users/johnpeterson/Documents/School Documents/CS578/dijkstra.cpp",
+		"/Users/johnpeterson/Documents/School Documents/CS578/dynamicfrog.cpp",
+		"/Users/johnpeterson/Documents/School Documents/CS578/packets.cpp",
+		"/Users/johnpeterson/Documents/School Documents/CS578/powerofmatrix.cpp",
+		"/Users/johnpeterson/Documents/School Documents/CS578/tautology.cpp",
+		"/Users/johnpeterson/Documents/School Documents/CS578/thundermountain.cpp",
+		"/Users/johnpeterson/Documents/School Documents/CS578/audophobia.cpp",
+		"/Users/johnpeterson/Documents/School Documents/CS578/speedyescape.cpp",
+		"/Users/johnpeterson/Documents/School Documents/CS578/passwords.cpp",
+		"/Users/johnpeterson/Documents/School Documents/CS578/treerecovery.cpp",
+		"/Users/johnpeterson/Desktop/untar_required.log",
+		"/Users/johnpeterson/Desktop/untar_bonus.log",
+		"/Users/johnpeterson/Desktop/2way.out",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/move_stuff.hex",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/move_stuff.out",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/cpu.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/two_way_cache_controller.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/unified_mem.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/two_way_cache.sv",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/new_2way_cache.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/id.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/RoadRunner_Stage2_BonusPart/run.sh",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/alu.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/br_bool.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/dst_mux.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/prgm_cntr.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/rf_pipelined.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/src_mux.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/t_cpu.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/two_way_mem_hierarchy.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/common_params.inc",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/2way_cache.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/mem_TB.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/mem2_TB.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/cache_controller.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/mem_hierarchy.v",
+		"/Users/johnpeterson/Downloads/PipelinedCode/Pipelined/instr_mem.v",
+		"/Users/johnpeterson/Downloads/PipelinedCode/Pipelined/cpu.v",
+		"/Users/johnpeterson/Downloads/PipelinedCode/Pipelined/multroutine.out",
+		"/Users/johnpeterson/Downloads/quartz-wm-1.3.1/quartz-wm-1.3.1/configure",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/2way_mem_hierarchy.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/2way_cache_controller.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/cache.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/failedStage1/t_controller.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/failedStage1/t_cpu.tb",
+		"/Users/johnpeterson/Documents/School Documents/CS578/risk.cpp",
+		"/Users/johnpeterson/Documents/School Documents/CS578/numberingPaths.cpp",
+		"/Users/johnpeterson/Documents/School Documents/CS577/H4/potholers.cpp",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/ALU/branch_met.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/ALU/ALU.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/ALU/flags.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/cpu_pipeline.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/Tests/inst1.hex",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/Tests/inst3.hex",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/TestStage1/TestStage1/BasicOpCodes2.txt",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/instr_mem.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/Tests/inst4.hex",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/Tests/inst2.hex",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/sample.txt",
+		"/Users/johnpeterson/Desktop/forwarding.v",
+		"/Users/johnpeterson/Desktop/nonforwarding.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/Tests/sample.hex",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/RoadRunner/RoadRunner_README.txt",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/t_cpu.tb",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/LLB_conflict.txt",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/inst1OUTPUT.txt",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/rf_single_cycle.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/Tests/JaredTest.hex",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/controller.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/sign_extenderStore.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/ALU/loadmod.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/data_mem.v",
+		"/Users/johnpeterson/Downloads/Verilog-2.sublime-package",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/ALU/ALU.sublime-project",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/ALU/arithmod.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/ALU/alu2.v",
+		"/Users/johnpeterson/Documents/School Documents/ECE552/PROJECT/ALU/t_ALU2.tb"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"expanded",
+			"currentSquare.X",
+			"currentSquare.Y",
+			"fifo_addr",
+			"full",
+			"BitTick",
+			"point",
+			"eps",
+			"gtype",
+			"intersect",
+			"onSeg",
+			"onRay",
+			"onLine",
+			"onray",
+			"ret",
+			"TESTCASE",
+			"n2",
+			"n1",
+			"s2",
+			"s1",
+			"dp",
+			"MAX",
+			"max",
+			"dp",
+			"m",
+			"si",
+			"vi",
+			"max",
+			"ns",
+			"nsc",
+			"S_max",
+			"L_max",
+			"q",
+			"c",
+			"x",
+			"memo",
+			"ways",
+			"makePair",
+			"make_pair",
+			"pt",
+			"td",
+			"d",
+			"cases",
+			"n",
+			"R",
+			"comp",
+			"minv",
+			"minn",
+			"Item",
+			"G",
+			"DO",
+			"D",
+			"MAX",
+			"longEnd",
+			"shortEnd",
+			"position",
+			"numAnts",
+			"logSize",
+			"farthestBadEnd",
+			"farthestGoodEnd",
+			"allFarthestBadEnd",
+			"allFarthestGoodEnd",
+			"cases",
+			"next",
+			"pathCost",
+			"distance",
+			"cost",
+			"value",
+			"mcmf",
+			"capacityacity",
+			"cap",
+			"prev",
+			"pot",
+			"dist",
+			"flowCost",
+			"flowVal",
+			"edge_type",
+			"MAX_E",
+			"MAX_V",
+			"stone",
+			"z",
+			"array",
+			"type",
+			"v",
+			"box",
+			"num",
+			"b)",
+			" b;",
+			"a ",
+			"index",
+			"taut",
+			"s;",
+			"ind",
+			"cur",
+			"perm",
+			"ret",
+			"solve",
+			"put",
+			"arr",
+			"Mat",
+			"maxn",
+			"ax",
+			"s2",
+			"s1",
+			"div",
+			"p[",
+			"EPS",
+			"PREC",
+			"index",
+			"combination",
+			"rule",
+			"word",
+			"d[",
+			"dijkstraRUN",
+			"w",
+			"MIN_V",
+			"NN",
+			"for(i, 60)",
+			"FOR(i, e)",
+			"FOR(i, m)",
+			"FOR",
+			"FOR(i, n)",
+			"FOR",
+			"FOR(a,b)",
+			"graph",
+			"MX",
+			"INF",
+			"cases"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"currentSquare.getX()",
+			"currentSquare.getY()",
+			"Enable",
+			"complex",
+			"intersection",
+			"inSeg",
+			"inRay",
+			"inLine",
+			"result",
+			"caseNum",
+			"length2",
+			"length1",
+			"array2",
+			"array1",
+			"matrix",
+			"MAXN",
+			"array",
+			"matrix",
+			"mat3",
+			"MAXS",
+			"MAXL",
+			"caseNum",
+			"memoized",
+			"construct",
+			"make_pair",
+			"makePair",
+			"pairArray",
+			"distance",
+			"diameter",
+			"caseNum",
+			"N",
+			"MINV",
+			"MINN",
+			"City",
+			"matrix",
+			"Y",
+			"X",
+			"MAXV",
+			"longPath",
+			"shortPath",
+			"antPos",
+			"antNum",
+			"stickLength",
+			"shortEnd",
+			"longEnd",
+			"longEnds",
+			"shortEnds",
+			"caseNum",
+			"nxt",
+			"pathDistance",
+			"pathCost",
+			"pathValue",
+			"min_cost",
+			"cap",
+			"capacity",
+			"previous",
+			"potential",
+			"distance",
+			"cost",
+			"value",
+			"int",
+			"MAXE",
+			"MAXV",
+			"s",
+			"m",
+			"pathArray",
+			"stone",
+			"array",
+			"parcel",
+			"parcels",
+			"bool2)",
+			" bool2;",
+			"bool1",
+			"position",
+			"result",
+			"str",
+			"index",
+			"count",
+			"options",
+			"solveMatrix",
+			"putMatrix",
+			"productmatrix",
+			"Matrix",
+			"MAXN",
+			"rebuild",
+			"string2",
+			"string1",
+			"factor",
+			"array[",
+			"1E-7",
+			"17",
+			"position",
+			"combine",
+			"options",
+			"matrix",
+			"dist[",
+			"run_dijkstra",
+			"MINV",
+			"MAXN",
+			"for(int i = 0; i < 60; ++i)",
+			"for(int i = 0; i < e; ++i)",
+			"for(int i = 0; i < m; ++i)",
+			"for(int i = 0; i < n; ++i)",
+			"for(int a = 0; a < b; ++a)",
+			"matrix",
+			"\"",
+			"case",
+			"maxA",
+			"matrix",
+			"MAX_DBL",
+			"for(int k=0;k<(N);k++)",
+			"for(int j=0;j<(N);j++)",
+			"for(int i=0;i<(N);i++)",
+			"map",
+			"paths",
+			"setNumber",
+			"'",
+			"\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.630992952865,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git-commit":
+	{
+		"height": 100.0
+	},
+	"project": "CS540HW1.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
